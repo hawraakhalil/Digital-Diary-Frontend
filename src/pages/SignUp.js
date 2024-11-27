@@ -42,17 +42,21 @@ function SignUp() {
               </div>
             </div>
             <div className="form-row">
-              <div className="form-group">
+            <div className="form-group">
                 <label>Please enter gender</label>
-                <input type="text" placeholder="E.g., Male/Female/Other" />
-              </div>
-              <div className="form-group">
+                <select>
+                <option value="" disabled selected>
+                    Select your gender
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+            <div className="form-group">
                 <label>Please confirm password</label>
-                <input
-                  type="password"
-                  placeholder="Re-enter your password"
-                />
-              </div>
+                <input type="password" placeholder="Re-enter your password" />
+            </div>
             </div>
             <button type="submit" className="signup-button">SIGN UP</button>
           </form>
