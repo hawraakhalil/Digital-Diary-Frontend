@@ -5,10 +5,20 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Left purple section */
-  .signup-left {
+/* Left blue section */
+.signup-left {
     flex: 1;
     background-color: #84c1e8;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  /* Image styling */
+  .signup-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   
   /* Right form section */
