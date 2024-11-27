@@ -1,0 +1,120 @@
+/* Container styles */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Left purple section */
+  .signup-left {
+    flex: 1;
+    background-color: #7f39fb;
+  }
+  
+  /* Right form section */
+  .signup-right {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-right h2 {
+    font-size: 24px;
+    color: #bb86fc;
+    margin-bottom: 10px;
+  }
+  
+  .signup-right p {
+    color: #7d7d7d;
+    margin-bottom: 20px;
+  }
+  
+  .signup-right a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Form styles */
+  .signup-form {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 50px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+    /* Placeholder improvements */
+  ::placeholder {
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bb86fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #bb86fc;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  
+    .signup-left {
+      height: 150px;
+    }
+  
+    .signup-right {
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 10px; /* Adjust space between fields on smaller screens */
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  }
+  
