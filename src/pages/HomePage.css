@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .content-container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Header row and main content row */
+    grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+    gap: 2rem; /* Space between rows and columns */
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Header Section */
+  .header-section {
+    grid-column: 1 / 3; /* Span both columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; /* Align text properly */
+    visibility: visible; /* Ensure visibility */
+    opacity: 1; /* Ensure full opacity */
+  }
+  
+  .welcome-text {
+    text-align: left;
+    margin-top: -5rem;
+  }
+  
+  .welcome-text h1 {
+    color: #004aad;
+    font-size: 3rem;
+    margin: 0;
+    visibility: visible; /* Ensure visibility */
+  }
+  
+  .welcome-text p {
+    color: #3979cf;
+    font-weight: bold ;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    visibility: visible; /* Ensure visibility */
+  }
+  
+  .splash-image {
+    text-align: right;
+  }
+  
+  .splash-image img {
+    max-width: 250px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin-right: 6rem;
+  }
+  
+  /* Main Section */
+  .main-section {
+    grid-column: 1 / 3; /* Span both columns on smaller screens */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for bot image and description */
+    align-items: center;
+    gap: 1rem; /* Space between bot image and description */
+    margin-top: -50px; /* Raise the bot image closer to the splash */
+  }
+  
+  .bot-image {
+    justify-self: start;
+  }
+  
+  .bot-image img {
+    max-width: 90%;
+    height: auto;
+    z-index: 2;
+    margin-top: -100px;
+    margin-left: -10px;
+  }
+
+  .description-section {
+    justify-self: end; /* Align description text to the right on larger screens */
+    text-align: center;
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack text and button vertically */
+    align-items: center; /* Center-align the button horizontally */
+    margin-top: -5rem;
+  }
+  
+  .description-section p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Space between description text and button */
+    color: #004aad;
+    text-align: center; /* Ensure text remains aligned properly */
+  }
+  
+  .start-button {
+    background-color: #84c1e8;
+    width: 40%;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem; /* Add some space above the button */
+  }
+  
+  .start-button:hover {
+    background-color: #1558b8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-container {
+      grid-template-rows: auto; /* Single-column layout for smaller screens */
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .header-section {
+      flex-direction: column; /* Stack the welcome text and splash image */
+      align-items: center;
+      text-align: center;
+      visibility: visible; /* Ensure it's always visible */
+      opacity: 1; /* Full visibility */
+    }
+  
+    .welcome-text {
+      margin-bottom: 1rem; /* Add spacing between welcome text and splash image */
+      visibility: visible; /* Force visibility */
+      opacity: 1; /* Ensure opacity */
+      margin-top: 1rem;
+    }
+  
+    .welcome-text h1 {
+      font-size: 2.5rem; /* Reduce size for smaller screens */
+      margin-bottom: 1rem;
+    }
+  
+    .welcome-text p {
+      font-size: 1.2rem;
+    }
+  
+    .splash-image {
+      margin-top: 1rem;
+      text-align: center;
+    }
+  
+    .splash-image img {
+      max-width: 200px; /* Adjust size for smaller screens */
+      margin: 0 auto;
+    }
+  
+    .main-section {
+      grid-template-columns: 1fr; /* Stack bot image and description vertically */
+      gap: 1.5rem;
+      margin-top: 0;
+    }
+  
+    .bot-image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%; /* Adjust size for smaller screens */
+        margin-top: 0;
+    }
+  
+    .description-section {
+      text-align: center;
+      margin-top: 0rem;
+    }
+  
+    .start-button {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+  
