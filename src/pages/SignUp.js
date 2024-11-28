@@ -5,7 +5,7 @@ function SignUp() {
     return (
       <div className="signup-container">
         <div className="signup-left">
-            <img src="/images/typewriter_stairs.png" alt="Typewriter Stairs" className="signup-image" />
+            <img src="/images/guy_with_pencil.png" alt="Typewriter Stairs" className="signup-image" />
         </div>
         <div className="signup-right">
           <h2>Create new Account</h2>

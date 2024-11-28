@@ -4,36 +4,28 @@ import "./Login.css";
 const Login = () => {
   return (
     <div className="login-container">
-      <div className="left-section"></div>
-      <div className="right-section">
-        <h1>Create new Account</h1>
+      <div className="login-left">
+          <img src="/images/typewriter_stairs.png" alt="Typewriter Stairs" className="login-image" />
+      </div>
+      <div className="login-right">
+        <h2>Log In</h2>
         <p>
-          Already Registered? <a href="#">Login</a>
+          Don't have an account? <a href="/SignUp">Sign Up!</a>
         </p>
-        <form className="signup-form">
-          <div className="form-group">
-            <label htmlFor="name">Please enter your name</label>
-            <input type="text" id="name" placeholder="Jiara Martins" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Please enter Email</label>
-            <input type="email" id="email" placeholder="hello@reallygreatsite.com" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Please enter password</label>
-            <input type="password" id="password" placeholder="*****" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="dob">Please enter date of birth</label>
-            <input type="date" id="dob" />
-          </div>
-          <button type="submit" className="signup-button">
-            SIGN UP
-          </button>
+        <form className="login-form">
+            <div className="login-form-group">
+              <label>Please enter your username or email</label>
+              <input type="text" placeholder="E.g., JDoe or john.doe@example.com" />
+            </div>
+            <div className="login-form-group">
+              <label>Please enter password</label>
+              <input type="password" placeholder="xxxxxx" />
+            </div>
+          <button type="submit" className="login-button">LOGIN</button>
         </form>
       </div>
     </div>
   );
-};
+}
 
 export default Login;

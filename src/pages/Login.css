@@ -1,84 +1,137 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container styles */
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left blue section */
+.login-left {
+  flex: 1;
+  background-color: #84c1e8;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+/* Image styling */
+.login-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Right form section */
+.login-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-right h2 {
+  font-size: 24px;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.login-right p {
+  color: #7d7d7d;
+  margin-bottom: 20px;
+}
+
+.login-right a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Form styles */
+.login-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+.login-form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.login-form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+  /* Placeholder */
+::placeholder {
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;    
+}
+
+.login-button:hover {
+  background-color: #004aad;
+}
+
+/* fields styling */
+.login-form-group input,
+.login-form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #fff; 
+  color: #333; 
+  outline: none; 
+  box-sizing: border-box;
+  font-family: inherit; 
+}
+
+.login-form-group input:focus,
+.login-form-group select:focus {
+  border-color: #004aad;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
   .login-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .left-section {
-    flex: 1;
-    background-color: #a064e8; /* Purple color */
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 50px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right-section h1 {
-    color: #a064e8;
-    margin-bottom: 10px;
-    font-size: 2rem;
-  }
-  
-  .right-section p {
-    color: #a064e8;
-    margin-bottom: 20px;
-  }
-  
-  .right-section a {
-    color: #a064e8;
-    text-decoration: none;
-  }
-  
-  .signup-form {
-    width: 100%;
-    max-width: 400px;
-    display: flex;
     flex-direction: column;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
+
+  .login-left {
+    height: 150px;
   }
-  
-  label {
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
+
+  .login-right {
+    padding: 20px;
   }
-  
-  input {
+
+  .login-form-group {
     width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
   }
-  
-  .signup-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #a064e8;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .signup-button:hover {
-    background-color: #8e4ed8;
-  }
-  
+}
