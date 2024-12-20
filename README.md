@@ -4,6 +4,7 @@ This repository contains the frontend code for the Digital Diary application, a 
 
 ## Features
 
+- **Home Page**: Brief introduction to the app and the team behind it all.
 - **User Authentication**: Secure login and registration system to protect user data.
 - **Diary Entries**: Create, read, update, and delete personal diary entries.
 - **Responsive Design**: Optimized for various devices to ensure a seamless user experience.
